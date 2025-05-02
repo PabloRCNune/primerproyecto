@@ -19,13 +19,9 @@ public class Demo {
 	@GetMapping("/")
 	public String index() {
 
-		Empleado empleado = new Empleado("paco");
 
-		empleado.setId((long) 1);
 
-		empleadoRepository.save(empleado);
 
-		Empleado nombreRel=empleadoRepository.findByNombreIs("paco");
 
 		return "externo/index";
 	}
