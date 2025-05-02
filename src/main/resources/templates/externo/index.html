@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,12 @@
 </head>
 <body>
   <h1>Hola mundo</h1>
-  
+
+<div th:text="${emp.nombre}"></div>
+<div th:text="${emp.edad}"></div>
+
+Mi numero favorito es
+<div th:text="${numerofavorito}"></div>
+
 </body>
 </html>
